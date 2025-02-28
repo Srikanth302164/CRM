@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="UserName" value="Admin" />
+		<parameter name="Password" value="Admin123" />
+		<parameter name="Module" value="Registration Desk" />
+		<classes>
+			<class
+				name="org.openmrs.demo.test.OpenMrsKeywordDrivenFramework">
+				<methods>
+					 <include name="registerpatient" />  
+					 <include name="findPatient" /> 
+					 <include name="activateVisitsAndAddAttachments" />
+					 <include name="deletePatient" />  
+				</methods>
+			</class>
+		</classes>
+	</test><!-- Test -->
+</suite> <!-- Suite -->
